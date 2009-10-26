@@ -1,0 +1,8 @@
+<h1>Paypal Express Settings</h1>
+
+<h4>Login: <%=  Spree::Config[:paypal_express_login] %> </h4>
+<h4>Password: <%=  Spree::Config[:paypal_express_password] %> </h4>
+<h4>Signature: <%=  Spree::Config[:paypal_express_signature] %> </h4>
+
+<%= link_to_with_icon 'edit', t("edit"), edit_admin_paypal_express_settings_path %>
+

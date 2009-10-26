@@ -1,0 +1,29 @@
+<h1>Paypal Express Settings</h1>
+
+<% form_tag(admin_paypal_express_settings_path, :method => :put) do -%>
+
+  <p>
+    <label>Paypal Express Login:</label><br />
+    <%= text_field_tag('preferences[paypal_express_login]', Spree::Config[:paypal_express_login], :maxlength => 100, :size => 100)%>
+    <br/>
+  </p>
+ <p>
+    <label>Paypal Express Password:</label><br />
+    <%= text_field_tag('preferences[paypal_express_password]', Spree::Config[:paypal_express_password], :maxlength => 100, :size => 100)%>
+    <br/>
+  </p>
+ <p>
+    <label>Paypal Express Signature:</label><br />
+    <%= text_field_tag('preferences[paypal_express_signature]', Spree::Config[:paypal_express_signature], :maxlength => 100, :size => 100)%>
+    <br/>
+  </p>
+  
+ 
+
+  <p class="form-buttons">
+    <%= button t('update') %>
+  </p>
+
+<% end -%>
+
+

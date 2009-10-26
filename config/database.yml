@@ -1,0 +1,18 @@
+development:
+   adapter: mysql
+   database: qpomo_spreedev
+   username: qpomo_spree
+   password: deD6FPop
+   host: localhost
+test:
+   adapter: mysql
+   database: qpomo_spreetest
+   username: qpomo_spree
+   password: deD6FPop
+   host: localhost
+production:
+   adapter: mysql
+   database: qpomo_spreelive
+   username: qpomo_spree
+   password: deD6FPop
+   host: localhost

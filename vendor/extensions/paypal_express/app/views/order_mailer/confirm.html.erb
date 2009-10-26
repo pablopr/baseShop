@@ -1,0 +1,22 @@
+Dear Customer,
+Estimado cliente,
+
+Please review and retain the following order information for your records. 
+Por favor, revise y guarde esta información de su pedido.   
+
+============================================================
+Order Summary   --  Resumen de Pedido
+============================================================
+<% for item in @order.line_items -%>
+<%=item.variant.sku %> <%=item.variant.product.name-%> <%= variant_options(item.variant) %> (<%=item.quantity-%>) @ <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
+<% end -%>      
+============================================================
+Subtotal: <%= number_to_currency @order.item_total %>
+<% @order.adjustments.each do |adjustment| %>
+<%= "#{adjustment.description}: #{number_to_currency adjustment.amount}"%>
+<% end %>
+Total: <%= number_to_currency @order.total %>
+
+
+Thank you for your business.
+Gracias por confiar en nosotros.

@@ -1,0 +1,17 @@
+---
+es:
+    pages: Paginas
+    ext_static_content_static_pages: Paginas Estáticas
+    ext_static_content_static_pages_desc: Edita páginas estáticas con un editor WYSIWYG.
+    ext_static_content_title: Título
+    ext_static_content_slug: Slug
+    ext_static_content_body: Body
+    ext_static_content_new_page: Crear Página
+    ext_static_content_editing_page: Editar Pagina
+    ext_static_content_foreign_link: Link externo (URL)
+    ext_static_content_show_in_header: Mostrar en la cabecera
+    ext_static_content_show_in_footer: Mostrar en el pie de página
+    ext_static_content_position: Posición
+    ext_static_content_visible: Visible
+    ext_static_content_confirm_delete: Estas seguro?
+    ext_static_content_link: Link

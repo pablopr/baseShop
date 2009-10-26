@@ -1,0 +1,223 @@
+/* 2.DEFAULT STYLING
+---------------------------------------------------------------------- */
+
+p,ul,dl,ol { margin-bottom:20px; }
+
+ul {  }
+ul li { margin-left:20px; }
+ol { list-style:decimal; }
+ol li { margin-left:40px; margin-bottom:10px; }
+
+hr { height:3px; border:none; background:url(/images/footer_bg.gif) repeat-x left center; margin:20px 0; }
+
+blockquote { font-family:Georgia,serif; font-style:italic; color:#666; font-size:12px; line-height:18px; margin-bottom:20px; padding:0 20px; border-left:1px solid #ccc; }
+blockquote p { margin-bottom:10px; } 
+blockquote cite { font-style:normal; text-transform:uppercase; font-size:9px; letter-spacing:1px; font-family:Verdana; display:block; margin-top:10px; }
+
+embed.video { margin-bottom:10px; }
+
+abbr { cursor:help; border-bottom:1px solid #ccc; }
+abbr:hover { border-color:#999; }
+a abbr { border:none; }
+
+del { color:#666; }
+strong { font-weight:bold; }
+em { font-style:italic; }
+em.piddly { font-size:11px; color:#666; }
+
+
+
+/* 3.HEADINGS
+---------------------------------------------------------------------- */
+
+h1 { font-size:40px; color:#333; font-weight:bold;}
+
+h2 { font-size:20px; color:#333; font-weight:bold; text-transform:uppercase; margin-bottom:25px; padding-bottom:5px; background:url(/images/footer_bg.gif) repeat-x left bottom; }
+
+h3 { font-weight:bold; font-size:13px; margin-bottom:5px; }
+h3.section_head { margin-bottom:15px; border-bottom:1px dotted #ccc; padding:10px 0 5px 0; }
+
+h4 { margin-bottom:5px; text-transform:uppercase; font-weight:bold; font-style:italic; font-size:11px; color:#999; }
+
+h5 { text-transform:uppercase; font-weight:bold; }
+
+
+
+/* 4.LINKS
+---------------------------------------------------------------------- */
+
+a:link,
+a:visited {  }
+a:hover,
+a:focus { color:#831026; }
+
+h2 a:link,
+h2 a:visited { text-decoration:none; color:#831026; }
+h2 a:hover,
+h2 a:focus { color:#000; }
+
+h3 a { text-decoration:none; }
+
+
+
+/* 5.IMAGES & VIDEOS
+---------------------------------------------------------------------- */
+
+img { border:none; }
+
+img.fl { float:left; margin:0 20px 10px 0; }
+img.fr { float:right; margin:0 0 10px 10px; }
+
+
+
+
+/* Especific tunning
+---------------------------------------------------------------------- */
+body { 
+	
+	font-family:Helvetica, Arial, sans-serif;
+	margin: 0 !important;
+	background:#FFFFFF url(/images/fondo_rojo.png) repeat-x scroll left top;
+} 
+
+#two-columns{
+	width:1220px;
+	margin: 0 auto;
+}
+
+a:link,
+a:visited { color:#333; }
+a:hover,
+a:focus { color:#831026; }
+
+div#header {
+	height:152px;
+}	
+
+#header a:hover, #header a:focus {
+color:#FFFFFF;
+}
+
+#header a {
+font-weight:bold;
+text-shadow:0 0 2px #31060F;
+color:#CCCCCC;
+font-size:11px;
+padding:7px;
+text-decoration:none;
+}
+#header #nav{
+	height: 50px;
+}
+
+#header #header_title{
+	height:100%;
+	padding-left:96px;
+}
+
+#header #header_title h1{ 
+color:#831026;
+font-size:2em;
+font-weight:bold;
+padding-left:18px;
+padding-top:78px;
+}
+#header_title .left{
+	color:#333333;
+    font-size:5em;
+    font-weight:bold;
+    width: auto;
+}
+
+
+#header_title  #logo{
+	width: 223px;
+}
+
+#header_title .right{
+	float:left;
+	text-align: left;
+	width: auto;
+}
+
+ul#nav-bar {
+line-height:25px;
+}
+
+div#footer {
+background:transparent url(/images/footer_bg.gif) no-repeat scroll 0 10px;
+clear:both;
+height:85px;
+margin-bottom:20px;
+position:relative;
+}
+
+#wrapper {
+	background-image:none !important;
+}
+#sidebar {
+border-right:none;
+}
+
+.price.selling {
+color:#831026;
+}
+
+h1.logo a {
+  background:none;
+}
+
+#checkout h2{
+ background:none;	
+}
+
+.footer_wrap{
+	width:100%;
+	height:30px;
+}
+
+/* scrollable gallery */
+	.items {
+		height:20000em;
+		margin:0;
+		position:absolute;
+		}
+
+		.items div {
+		font-size:10px;
+		height:120px;
+		margin:10px 0;
+		padding:15px;
+		width:200px;
+		background:transparent url(/images/fondo_gris.gif) no-repeat scroll 0 0;
+		}
+		
+		.items div .info{
+			padding-left:30px;
+		}
+
+		.vertical {
+		height:640px;
+		overflow:hidden;
+		position:relative;
+		width:160;
+		}
+
+		.items img {
+		float:left;
+		height:100px;
+		margin:10px 45px;
+		width:100px;
+		}
+		
+		#scroller {
+		position:relative;
+		float:right;
+		top:55px;
+		width:225px;
+		}
+                
+	 	#wrapper{
+		margin-left:0%;
+		float: left;
+		}

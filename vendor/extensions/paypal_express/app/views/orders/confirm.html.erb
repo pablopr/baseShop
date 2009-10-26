@@ -1,0 +1,72 @@
+<% @body_id = 'cart' %>
+<script type="text/javascript" charset="utf-8">
+	//On page load
+	$(function() {
+		$(".paypal_submit").click(function(){
+			$(this).hide();
+		});
+	});
+</script>
+<div class="cart">
+<h1><%=t("confirm_payment_details")%></h1>
+
+<h2 class="paypal"> <%=t("order_details")%></h2>
+
+<div class="inner">
+		<%= render :partial => 'shared/order_details', :locals => {:order => @order} -%>
+ </div>
+ 
+
+
+<!--
+<h2 class="paypal"> <%=t("bill_address")%></h2>
+<div class="inner">
+
+    	<p id="sfname">
+    		<label for="<%= t("name") %>"><%= t("name") %></label>
+    		<%= @address['name'] %>
+    	</p>
+    	<p id="slname">
+    		<label for="<%= t("company") %>"><%= t("company") %></label>
+    		<%= @address['company'] %>
+    	</p>
+    	<p id="saddress">
+    		<label for="<%= t("street_address") %>"><%= t("street_address") %></label>
+    		<%= @address['address1'] %>
+    	</p>
+    	<p id="saddress2">
+    		<label for="<%= t("street_address_2") %>"><%= t("street_address_2") %></label>
+    		<%= @address['address2'] %>
+    	</p>
+    	<p id="scity">
+    		<label for="<%= t("city") %>"><%= t("city") %></label>
+    		 <%= @address['city'] %>
+    	</p>    
+          <p>
+            <label for="<%= t("state") %>"><%= t("state") %></label>
+            <span id="sstate">
+             <%= @address['state'] %>           
+             </span>
+
+          </p>
+    	<p id="szip">
+    		<label for="<%=t ("zip") %>"><%= t("zip") %></label>
+    		<%= @address['zip'] %>    	</p>
+    	<p id="scountry">
+    		<label for="<%= t("country") %>"><%= t("country") %></label>
+    		<%= @address['country'] %>
+    	</p>	
+    
+ </div>
+ --!>
+ 
+  	<%#= debug(@order.shipping_methods) %>
+			<% form_tag complete_order_url(@order,:token => params[:token], :payer_id => params[:PayerID], :checkout_complete => 'yes') do %>	
+			
+			<div class="form-buttons">	
+				  <%= submit_tag t('confirm'), :disabled => false, :class => 'paypal_submit button primary' %>
+				
+		    </div>
+	 <% end %> 
+    
+</div>

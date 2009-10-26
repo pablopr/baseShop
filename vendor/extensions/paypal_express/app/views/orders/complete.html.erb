@@ -1,0 +1,19 @@
+<% @body_id = 'cart' %>
+
+  <% if params.has_key? :checkout_complete %>
+  	<h1 class="thanks_for_order"><%= t('thank_you_for_your_order') %></h1>         
+  	<% if Spree::Config[:google_analytics_id] and not %w{development test}.include? RAILS_ENV %>
+  	  <%= render :partial => "orders/google_order", :locals => {:order => @order} %>
+  	<% end %>
+
+  <% else %>
+    <h1 class="thanks_for_order"><%= t('thank_you_for_your_order') %></h1>
+		<% end %>
+	
+	<div id="order">
+	<p><%= t('check_your_email_order') %></p>
+  <%= render :partial => 'shared/order_details', :locals => {:order => @order} -%>
+
+  <br/>
+  <p><%= link_to t('back_to_store'), products_path %></p><br /><br />
+</div>

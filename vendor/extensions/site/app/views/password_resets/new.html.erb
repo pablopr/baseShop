@@ -1,0 +1,13 @@
+<h1><% t("forgot_password_title") %>No recuerdo mi contraseña</h1> 
+ 
+ <% t("forgot_password_instructions") %>
+ Escribe tu email y te enviaremos las instrucciones para recuperar tu contraseña:
+<br />
+<br />
+ 
+<% form_tag password_resets_path do %>
+  <label>Email:</label><br />
+  <%= text_field_tag "email" %><br />
+  <br />
+  <%= submit_tag t("reset_password") %>
+<% end %>
