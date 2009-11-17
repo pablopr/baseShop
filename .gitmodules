@@ -1,0 +1,18 @@
+[submodule "vendor/static-content"]
+	path = vendor/static-content
+	url = git://github.com/PeterBerkenbosch/spree-static-content.git
+[submodule "vendor/extensions/static-content"]
+	path = vendor/extensions/static-content
+	url = git://github.com/PeterBerkenbosch/spree-static-content.git
+[submodule "vendor/extensions/static_content"]
+	path = vendor/extensions/static_content
+	url = git://github.com/PeterBerkenbosch/spree-static-content.git
+[submodule "vendor/extensions/product_lightbox"]
+	path = vendor/extensions/product_lightbox
+	url = git://github.com/stephp/spree-product-lightbox.git
+[submodule "vendor/extensions/sitemaps"]
+	path = vendor/extensions/sitemaps
+	url = git://github.com/paulcc/spree-sitemaps.git
+[submodule "vendor/extensions/subscription_manager"]
+	path = vendor/extensions/subscription_manager
+	url = git://github.com/paulcc/spree-subscription-manager.git
