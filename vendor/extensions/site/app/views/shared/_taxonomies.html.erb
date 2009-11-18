@@ -1,10 +1,26 @@
-<div id="taxonomies" class="sidebar-item">
-<% @taxonomies.each do |taxonomy| %>
-  <ul class="navigation-list">
-	  <li<%= ' class="current"' if @taxon && @taxon == taxonomy.root %>><h2><%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %></h2></li>
-	  <% taxonomy.root.children.each do |taxon| %>
-	    <li<%= ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>><h3><%= link_to taxon.name, seo_url(taxon) %></h3></li>
-	  <% end %>
+<div id="taxonomies" class="span-24">
+	<ul class="dropdown">
+		<% @taxonomies.each do |taxonomy| %>
+  
+		  	<li <%= 'class="current"' if @taxon && @taxon == taxonomy.root %>>
+			     <% if taxonomy.root.children.size > 0 %>
+			    	<%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %>
+			
+					<ul class="sub_menu">
+						 <% taxonomy.root.children.each do |taxon| %>
+						    <li<%= ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>><%= link_to taxon.name, seo_url(taxon) %></li>
+						  <% end %>
+					</ul>
+			     <% else %>
+					<%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %>
+				 <% end %>
+			 </li>
+ 
+		<% end %>
 	</ul>
-<% end %>
 </div>
+
+
+
+
+

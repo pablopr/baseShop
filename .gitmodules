@@ -16,3 +16,6 @@
 [submodule "vendor/extensions/subscription_manager"]
 	path = vendor/extensions/subscription_manager
 	url = git://github.com/paulcc/spree-subscription-manager.git
+[submodule "vendor/spree"]
+	path = vendor/spree
+	url = git://github.com/railsdog/spree.git

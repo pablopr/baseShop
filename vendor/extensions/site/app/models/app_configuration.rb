@@ -35,7 +35,7 @@ class AppConfiguration < Configuration
   preference :admin_interface_logo, :string, :default => "/images/logo.png"
   preference :allow_ssl_in_production, :boolean, :default => false
   preference :allow_ssl_in_development_and_test, :boolean, :default => false
-  preference :google_analytics_id, :string, :default => 'UA-11188402-1' # Replace with real Google Analytics Id 
+  preference :google_analytics_id, :string, :default => 'UA-11189532-1' # Replace with real Google Analytics Id 
   preference :allow_guest_checkout, :boolean, :default => true 
   preference :alternative_billing_phone,  :boolean, :default => false # Request extra phone for bill addr
   preference :alternative_shipping_phone, :boolean, :default => false # Request extra phone for ship addr

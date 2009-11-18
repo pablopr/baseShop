@@ -1,26 +1,55 @@
-<div id="footer">
-  <div class="footer_wrap">
+<div class="container">
+<%= render :partial => 'shared/language_bar' if Spree::Config[:allow_locale_switching] %>
+</div>
 
-    <div class="left">
+<div id="footer" >
 
-		    <% for page in Page.footer_links do %>
-		      <%= link_to page.title, page.link %>  
-		    <% end %>
+   <div  class=" footer_wrap container">
+	
+	<div class="span-7 append-1">
+		<h2 class="title ">
+				Información
+		</h2>
+			<ul id="navigation">	    
+				<% for page in Page.footer_links do %>
+				     <li><%= link_to page.title, page.link %></li>
+				 <% end %>
+			</ul>
 
     </div>
-    <div class="right">
-    <%= render :partial => 'shared/language_bar' if Spree::Config[:allow_locale_switching] %>
+    
+	<div class="span-7 append-1">
+			<h2 class="title ">
+				Noticias
+			</h2>
+		   	<ul id="navigation">	    
+				<% for page in Page.footer_links do %>
+				     <li><%= link_to page.title, page.link %></li>
+				 <% end %>
+			</ul>
+
     </div>
 
- </div>
-   <div class="footer_wrap">
+	<div class="span-8 last">
+			<h2 class="title ">
+				Seguridad
+			</h2>
 
+		    <ul id="navigation">	    
+				<% for page in Page.footer_links do %>
+				     <li><%= link_to page.title, page.link %></li>
+				 <% end %>
+			</ul>
 
-    <p>
-      <%= t("powered_by") %> <a href="http://tapershop.com/">Tiendas online Tapershop</a>
-    </p>
+    </div>
+    
+    
+  </div>
 
-  
+  <div class="footer_wrap container" >
+  <p id="by_tapershop">
+    <%= t("powered_by") %> <a href="http://tapershop.com/">Tiendas online Tapershop</a>
+  </p>
   </div>
 </div>   
 <% if Spree::Config[:google_analytics_id] and not %w{development test}.include? RAILS_ENV and not params[:checkout_complete] %>

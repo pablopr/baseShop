@@ -5,9 +5,12 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
  
   <%= stylesheet_link_tag 'compiled/screen' %>
-  <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/site.css">
+
+   <%= stylesheet_link_tag 'site' %>
+    <%= stylesheet_link_tag 'dropdown' %>
  
-  <%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.pack.js', 'jquery.tools.min.js', :cache => 'jquery-and-plugins' %>
+ 
+  <%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.min', 'jquery.tools.min', 'jquery.dropdown', 'hoverIntent', :cache => 'jquery-and-plugins' %>
   
 
   
@@ -18,48 +21,52 @@
 <%
 if @body_class.nil?
   if @content_for_sidebar
-    @body_class = 'two-col'
+    @body_class = ''
   else
-    @body_class = 'one-col'
+    @body_class = ''
   end
 end
  %>
 <body class="<%= @body_class %>"<%= %( id="#{@body_id}") if @body_id %>>
-  <div id="header" class="container">
-    <div id="nav">                                                           
+  <div id="header" >
+	
+	<div class="container">
+	<div id="header_title" class="span-8 append-bottom prepend-top">
+	    <div class="span-24">
+	   		<h1>QPomo.com</h1>
+	    </div>
+	   <div class="span-24">
+	      <label class="large prepend-3 last"><%= t('header_home') %></label>
+	   </div>
+	</div>
+	
+	<div id="main-nav" class="span-7 append-bottom prepend-top">
+		 <%= render :partial => 'shared/main_nav'%> 
+	</div>
+	
+    <div id="nav" class="span-9 last append-bottom prepend-top">                                                           
     <ul id="nav-bar">
       <div id="login-bar">
         <%= render 'shared/login_bar' %>
       </div>
       <% if store_menu? %>
-        <%= render 'shared/store_menu' %>
+        <li class="cart-indicator"><%= link_to_cart %></li>
       <% end %>
     </ul>
-    
-	<a title="Inicio" href="http://www.qpomo.com">
-	   QPomo.com 
-	</a>
+ 
 	</div>
-	
-	<div id="header_title">
-	    <div class="left">
-	   <img src="/images/qpomo.gif" alt="pomos para puertas" width="80px" id="logo" />
-	   </div>
-	   <div class="right">
-	   <h1><%= t('header_home') %></h1>
-	   </div>
 	</div>
   </div>
-  
-  <div id="two-columns">
-	  <div id="wrapper" class="container"> 
-	    <% if @content_for_sidebar %>
-	    <div id="sidebar">
-	      <%= yield :sidebar %>
-	    </div>
-	    <% end %>
-	    
-	    <div id="content">
+ 
+   
+
+  <div  class="container">
+		
+		<% if @content_for_sidebar %>
+		      <%= yield :sidebar %>
+		<% end %>
+		
+	    <div id="content" class="span-24" >
 	      <%= breadcrumbs(@taxon) if @taxon %>
 	      <% if flash[:notice] %>
 	      <div class="flash notice"><%= flash[:notice] %></div>
@@ -69,12 +76,9 @@ end
 	      <% end %>
 	      <%= yield %>
 	    </div>
-	    <%= render :partial => 'shared/footer'%>   
-	     		
-	  </div>
-	  <% if @products %>
-	  <%= render :partial => "shared/scrollable_gallery.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
-	   <% end %>
    </div>
+
+ <%= render :partial => 'shared/footer'%>   
+
 </body>
 </html>
