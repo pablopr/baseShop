@@ -1,0 +1,90 @@
+body{
+background:none;
+margin-top:0;
+}
+ 
+.header-box{
+border-bottom:1px solid #636363;
+border-top:1px solid #636363;
+}
+ 
+#header, #footer {
+background-color: #3E3E3E;
+color: #FFF;
+}
+ 
+#header h1, #footer h1, #header a , #footer a, #header label, #footer a, #footer h2{
+color: #FFF;
+}
+#header_title label {
+color: #636363;
+}
+ 
+ 
+ul#navigation li a {
+background:transparent url(/images/icn_nav.gif) no-repeat scroll 0 0;
+display:block;
+height:15px;
+padding-left:22px;
+}
+ul#navigation li {
+height:22px;
+}
+ 
+ul#nav-bar {
+line-height:1.8em;
+font-size:1em;
+}
+ 
+ 
+#taxonomies{
+margin-bottom:1.5em;
+}
+ 
+#taxonomies ul.dropdown li {
+background:#3E3E3E;
+padding:5px;
+ 
+}
+ 
+#taxonomies ul.dropdown li:hover{
+background:#000;
+}
+ 
+#taxonomies ul.dropdown li a {
+color:#FFFFFF;
+border:none;
+}
+ 
+#footer {
+margin-top:3em;
+}
+ 
+.footer_wrap {
+border-top:1px solid #636363;
+padding:17px 0 0;
+}
+ 
+.title {
+background:transparent url(/images/dwn_arrow.gif) no-repeat scroll right 28px;
+border-bottom:1px solid #636363;
+font-size:24px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+height:66px;
+line-height:24px;
+}
+#by_tapershop{
+font-size:0.8em;
+}
+ 
+div#checkout p label.error {
+top:5px;
+}
+ 
+.product-listing {
+margin:0 0 0;
+}

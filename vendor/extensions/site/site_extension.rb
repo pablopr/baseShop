@@ -14,7 +14,7 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'compiled/screen,site,dropdown'
+      preference :stylesheets, :string, :default => 'compiled/screen,qpomo,dropdown'
     end
   end
   
