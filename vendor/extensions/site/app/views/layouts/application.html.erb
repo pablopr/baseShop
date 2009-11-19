@@ -1,22 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title><%= title + ' | ' + t('title_home') %></title>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
- 
-  <%= stylesheet_link_tag 'compiled/screen' %>
-
-   <%= stylesheet_link_tag 'site' %>
-    <%= stylesheet_link_tag 'dropdown' %>
- 
- 
-  <%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.min', 'jquery.tools.min', 'jquery.dropdown', 'hoverIntent', :cache => 'jquery-and-plugins' %>
-  
-
-  
-  <%= meta_data_tags %> 
-  <%= yield :head %>
-   <meta name="google-site-verification" content="N8YjFCR2Al_4vccPhV_7tG_McsETq5sg5k1EfTr92wo" />
+   <%= render :partial => 'shared/head'%>
 </head>
 <%
 if @body_class.nil?
@@ -32,19 +17,19 @@ end
 	
 	<div class="container">
 	<div id="header_title" class="span-8 append-bottom prepend-top">
-	    <div class="span-24">
-	   		<h1>QPomo.com</h1>
+	    <div class="span-8">
+	   		<a href="/" title="Inicio"><h1>Tapershop</h1></a>
 	    </div>
-	   <div class="span-24">
-	      <label class="large prepend-3 last"><%= t('header_home') %></label>
+	   <div class="span-8">
+	      <label class="large last"><%= t('header_home') %></label>
 	   </div>
 	</div>
 	
-	<div id="main-nav" class="span-7 append-bottom prepend-top">
+	<div id="main-nav" class="span-7 prepend-1 append-bottom prepend-top">
 		 <%= render :partial => 'shared/main_nav'%> 
 	</div>
 	
-    <div id="nav" class="span-9 last append-bottom prepend-top">                                                           
+    <div id="nav" class="span-8 last append-bottom prepend-top">                                                           
     <ul id="nav-bar">
       <div id="login-bar">
         <%= render 'shared/login_bar' %>
@@ -60,7 +45,7 @@ end
  
    
 
-  <div  class="container">
+  <div  class="container prepend-top">
 		
 		<% if @content_for_sidebar %>
 		      <%= yield :sidebar %>
