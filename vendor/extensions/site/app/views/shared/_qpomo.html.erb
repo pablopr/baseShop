@@ -52,7 +52,12 @@ end
 		      <%= yield :sidebar %>
 		<% end %>
 		
-	    <div id="content" class="span-20" >
+		<% if @products %>
+	    	<div id="content" class="span-20" >
+		<% else %>
+		    <div id="content" class="span-24" >
+	    <% end %>
+	
 	      <%= breadcrumbs(@taxon) if @taxon %>
 	      <% if flash[:notice] %>
 	      <div class="flash notice"><%= flash[:notice] %></div>
@@ -63,11 +68,13 @@ end
 	      <%= yield %>
 	    </div>
 	
-	     <div id="" class="span-4 last" >
+	     
 		<% if @products %>
+		<div id="" class="span-4 last" >
 			  <%= render :partial => "shared/scrollable_gallery.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
-			   <% end %>
-	   </div>
+		</div>
+	    <% end %>
+	   
    </div>
 
  <%= render :partial => 'shared/footer'%>   
