@@ -1,6 +1,6 @@
 <h2><%= t("payment_information") %></h2>
    <div class="inner">
-        <h3> Pague sus compras de forma segura con Paypal, la plataforma de pago más grande del mundo:</h3>
+        <h3> Pague sus compras con Paypal:</h3>
     </div>
   <div class="inner">
   	<div class="form-buttons">
@@ -10,3 +10,11 @@
   	</div>
   </div>    
 
+<% checkout_form.fields_for :creditcard do |creditcard_form| %>
+  <div class="inner">
+        <h3> O pague por transferencia bancaria:</h3>
+   <div class="form-buttons">
+         <input id="continue_payment" type="button" class="button primary" value="<%=t("bank_trasnfer")%>"/>
+   </div>
+  </div>
+<% end %>
