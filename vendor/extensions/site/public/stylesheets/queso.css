@@ -1,0 +1,94 @@
+/*
+ * cabecera = #2E6AB1
+ * secundario = #7CBA0F
+ * */
+body{
+background:none;
+margin-top:0;
+}
+ 
+
+ 
+.header-box{
+border-bottom:1px solid #7CBA0F;
+border-top:1px solid #7CBA0F;
+}
+ 
+#header, #footer {
+background-color: #2E6AB1;
+color: #FFF;
+}
+ 
+#header h1, #footer h1, #header a , #footer a, #header label, #footer a, #footer h2{
+color: #FFF;
+}
+#header_title label {
+color: #7CBA0F;
+}
+ 
+ 
+ul#navigation li a {
+display:block;
+height:15px;
+padding-left:22px;
+}
+ul#navigation li {
+height:22px;
+}
+ 
+ul#nav-bar {
+line-height:1.8em;
+font-size:1em;
+}
+ 
+ 
+#taxonomies{
+margin-bottom:1.5em;
+}
+ 
+#taxonomies ul.dropdown li {
+background:#2E6AB1;
+padding:5px;
+ 
+}
+
+#taxonomies ul.dropdown li:hover{
+background:#7CBA0F;
+}
+ 
+#taxonomies ul.dropdown li a {
+color:#FFFFFF;
+border:none;
+}
+ 
+#footer {
+margin-top:3em;
+}
+ 
+.footer_wrap {
+border-top:1px solid #7CBA0F;
+padding:17px 0 0;
+}
+ 
+.title {
+border-bottom:1px solid #7CBA0F;
+font-size:24px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+height:66px;
+line-height:24px;
+}
+#by_tapershop{
+font-size:0.8em;
+}
+ 
+div#checkout p label.error {
+top:5px;
+}
+ 
+.product-listing {
+margin:0 0 0;
+}
