@@ -14,7 +14,7 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'compiled/screen,qpomo,dropdown'
+      preference :stylesheets, :string, :default => 'compiled/screen,queso,dropdown'
       preference :site_name, :string, :default => 'Tapershop demo site'
       preference :site_url, :string, :default => 'demo.tapershop.com'
       preference :mails_from, :string

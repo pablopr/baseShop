@@ -7,7 +7,7 @@
 #ENV['GEM_PATH'] = '/home/qpomo/ruby/gems:/usr/lib/ruby/gems/1.8'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-SPREE_GEM_VERSION = '0.9.1' unless defined? SPREE_GEM_VERSION
+SPREE_GEM_VERSION = '0.9.99' unless defined? SPREE_GEM_VERSION
           
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -28,20 +28,21 @@ Spree::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "aws-s3", :lib => "aws/s3"
 
-  config.gem "highline", :version => '>=1.4.0'
-  config.gem 'authlogic', :version => '>=2.0.11'
-  config.gem "activemerchant", :lib => "active_merchant", :version => '>=1.4.1'
-  config.gem "tlsmail", :version => '0.0.1'
-  config.gem 'activerecord-tableless', :lib => 'tableless', :version => '>=0.1.0'
-  config.gem 'haml', :version => '2.2.0'
-  config.gem 'chriseppstein-compass', :lib => 'compass', :source => "http://gems.github.com", :version => '0.8.17'
-  config.gem 'calendar_date_select', :version => '1.15'    
-  config.gem 'rsl-stringex', :lib => 'stringex', :source => "http://gems.github.com"
-  config.gem 'chronic' #required for whenever
-  config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
-  config.gem 'searchlogic', :version => '>= 2.3.5'
-  config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate', 
-        :source => 'http://gems.github.com'
+   config.gem "highline", :version => '>=1.4.0'
+   config.gem 'authlogic', :version => '>=2.1.2'
+   config.gem 'authlogic-oid', :lib => "authlogic_openid"
+   config.gem "activemerchant", :lib => "active_merchant", :version => '>=1.4.1'
+   config.gem "tlsmail", :version => '0.0.1'
+   config.gem 'activerecord-tableless', :lib => 'tableless', :version => '>=0.1.0'
+   config.gem 'haml', :version => '>=2.2.0'
+   config.gem 'compass', :version => '0.8.17', :source => "http://gemcutter.org"
+   config.gem 'calendar_date_select', :version => '1.15'
+   config.gem 'rsl-stringex', :lib => 'stringex', :source => "http://gems.github.com"
+   config.gem 'chronic' #required for whenever
+   config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
+   config.gem 'searchlogic', :version => '>= 2.3.5'
+   config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate', :source => 'http://gems.github.com'
+   config.gem 'pluginaweek-state_machine', :version => '0.8.0', :lib => 'state_machine', :source => 'http://gems.github.com'
 
 
   # Only load the plugins named here, in the order given. By default, all plugins 
@@ -60,7 +61,7 @@ Spree::Initializer.run do |config|
   # Make Time.zone default to the specified zone, and make Active Record store time values
   # in the database in UTC, and return them converted to the specified local zone.
   # Run "rake -D time" for a list of tasks for finding time zone names. 
-  config.time_zone = "Eastern Time (US & Canada)"
+  config.time_zone = "Madrid"
 
   # Use SQL instead of Active Record's schema dumper when creating the test database.
   # This is necessary if your schema can't be completely dumped by the schema dumper,
@@ -73,7 +74,7 @@ Spree::Initializer.run do |config|
   # The internationalization framework can be changed to have another default locale (standard is :en) or more load paths.
   # All files from config/locales/*.rb,yml are added automatically.
   #config.i18n.load_path << Dir[File.join(RAILS_ROOT, 'my', 'locales', '*.{rb,yml}')]
-  config.i18n.default_locale = :'en-US'    
+  config.i18n.default_locale = :'es'    
 
   config.active_record.observers = :order_observer
 end

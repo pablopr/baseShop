@@ -1,6 +1,6 @@
 <div id="taxonomies" class="span-24">
 	<ul class="dropdown">
-		<% @taxonomies.each do |taxonomy| %>
+		<% get_taxonomies.each do |taxonomy| %>
   
 		  	<li <%= 'class="current"' if @taxon && @taxon == taxonomy.root %>>
 			     <% if taxonomy.root.children.size > 0 %>
@@ -19,8 +19,3 @@
 		<% end %>
 	</ul>
 </div>
-
-
-
-
-

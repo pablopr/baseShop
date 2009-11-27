@@ -262,7 +262,7 @@ es:
   editing_prototype: "Editando Prototipo"
   editing_shipping_category: "Editando Categoria de envío"
   editing_shipping_method: "Editando metodo de envío"
-  editing_shipping_rate: Editando tasa de env�o
+  editing_shipping_rate: Editando tasa de env�o
   editing_state: "Editando provincia"
   editing_tax_category: "Editando Categoría fiscal"
   editing_tax_rate: "Editing Tax Rate"
@@ -379,7 +379,7 @@ es:
   new_state: "Nueva provincia"
   new_tax_category: "Nueva categoría"
   new_tax_rate: "Nuevo tipo impositivo"
-  new_taxon: "Nuevo tax�n"
+  new_taxon: "Nuevo tax�n"
   new_taxonomy: "Nueva taxonomia"
   new_user: "Nuevo usuario"
   new_variant: "Nueva Variante"
@@ -560,13 +560,13 @@ es:
   tax_settings_description: Configuracion basica de impuestos.
   tax_total: "Total impuestos"
   tax_type: "Tipo de impuesto"
-  taxon: Impuesto
+  taxon: Taxonomía
   taxonomies: Taxonomias
   taxonomies_setting_description: "Crear y manejar taxonomías"
   taxonomy_edit: "Editar taxonomía"
   taxonomy_tree_error: "The requested change has not been accepted and the tree has been returned to its previous state, please try again."
   taxonomy_tree_instruction: "* Botón derecho para acceder al menu para añadir,borrar y ordenar los descendientes."
-  taxons: Impuestos
+  taxons: Taxonomías
   thank_you_for_your_order: "Gracias por su pedido"
   this_file_language: "Español (España)"
   thumbnail: "Thumbnail"
@@ -601,7 +601,7 @@ es:
   website: "Página web"
   weight: Peso
   welcome_to_sample_store: "Bienvenido a la tienda de ejemplo"
-  what_is_a_cvv: "¿Que es el codigo de verificacion (CVV)?"
+  what_is_a_cvv: "¿Qué es el código de verificacion (CVV)?"
   what_is_this: "¿Qué es esto?"
   whats_this: "¿Qué es esto?"
   width: Ancho
@@ -625,5 +625,9 @@ es:
   error_paypal: "Desafortunadamente ha ocurrido un error durante la finalización de la compra:"
   contact_support: "contacta con nosotros para resolver el estado de tu compra."
   confirm_payment_details: "Confirma tu pago."
+  pay_by_paypal: "Pagar con Paypal:"
+  pay_by_bank_trasnfer: "Pagar por transferencia bancaria:"
+  bank_trasnfer_next_step: "En el siguiente paso, te daremos los datos necesarios para hacer la transferencia."
+  bank_trasnfer_button: "transferencia bancaria"
 
 
