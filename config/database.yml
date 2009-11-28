@@ -12,8 +12,8 @@ test:
   database: db/test.sqlite3.db
   
 production:
-   adapter: mysql
-   database: qpomo_spreelive
-   username: qpomo_spree
-   password: deD6FPop
-   host: localhost
+  adapter: mysql
+  database: taperweb_spreeold
+  username: taperweb_spree
+  password: deD6FPop
+  host: localhost

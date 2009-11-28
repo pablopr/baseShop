@@ -3,8 +3,9 @@
 # Uncomment below to force Rails into production mode when 
 # you don't control web/app server and can't set it the proper way
 # ENV['RAILS_ENV'] ||= 'production'
-#ENV['RAILS_ENV'] ||= 'production'
-#ENV['GEM_PATH'] = '/home/qpomo/ruby/gems:/usr/lib/ruby/gems/1.8'
+ENV['RAILS_ENV'] ||= 'production'
+ENV['GEM_PATH'] = '/home/taperweb/ruby/gems:/usr/lib/ruby/gems/1.8'
+
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 SPREE_GEM_VERSION = '0.9.99' unless defined? SPREE_GEM_VERSION
