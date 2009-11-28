@@ -626,8 +626,8 @@ es:
   contact_support: "contacta con nosotros para resolver el estado de tu compra."
   confirm_payment_details: "Confirma tu pago."
   pay_by_paypal: "Pagar con Paypal:"
-  pay_by_bank_trasnfer: "Pagar por transferencia bancaria:"
-  bank_trasnfer_next_step: "En el siguiente paso, te daremos los datos necesarios para hacer la transferencia."
-  bank_trasnfer_button: "transferencia bancaria"
+  pay_by_bank_transfer: "Pagar por transferencia bancaria:"
+  bank_transfer_next_step: "En el siguiente paso, te daremos los datos necesarios para hacer la transferencia."
+  bank_transfer_button: "transferencia bancaria"
 
 

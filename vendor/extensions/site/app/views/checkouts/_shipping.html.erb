@@ -19,37 +19,30 @@
     		<label for="<%= t("street_address_2") %>"><%= t("street_address_2") %></label>
     		<%= address.text_field :address2 %>
     	</p>
-    	<p id="scity">
-    		<label for="<%= t("city") %>"><%= t("city") %></label>
-    		<%= address.text_field :city, :class => 'required' -%><span class="req">*</span>
-    	</p>    
-        <% if Spree::Config[:address_requires_state] %>
+    
+        	<p id="scountry">
+	    		<label for="<%= t("country") %>"><%= t("country") %></label>
+	    		<span id="scountry"><%= address.collection_select :country_id, @shipping_countries, :id, :name, {}, {:style => 'width:150px;', :class => 'required'} %></span>
+	    	</p>
+	
           <p>
             <label for="<%= t("state") %>"><%= t("state") %></label>
             <span id="sstate">
-              <% if @checkout.shipment.address.state.present? %>
-    		<%= collection_select("checkout[shipment_attributes][address_attributes]", 
-                                      :state_id, 
-                                      @states, 
-                                      :id, 
-                                      :name, 
-                                      {:include_blank => true}, 
-                                      {:style=> 'width:150px;'}) %>
-              <% else %>
                 <%= address.text_field :state_name, :class => 'required' -%>
-              <% end %>
             </span>
             <span class="req">*</span>
           </p>
-        <% end %>
+
+	 	<p id="scity">
+	    		<label for="<%= t("city") %>"><%= t("city") %></label>
+	    		<%= address.text_field :city, :class => 'required' -%><span class="req">*</span>
+	    	</p>
+      
     	<p id="szip">
     		<label for="<%=t ("zip") %>"><%= t("zip") %></label>
     		<%= address.text_field :zipcode, :class => 'required' -%><span class="req">*</span>
     	</p>
-    	<p id="scountry">
-    		<label for="<%= t("country") %>"><%= t("country") %></label>
-    		<span id="scountry"><%= address.collection_select :country_id, @shipping_countries, :id, :name, {}, {:style => 'width:150px;', :class => 'required'} %></span>
-    	</p>
+    
     	<p id="sphone">
     		<label for="<%= t("phone") %>"><%= t("phone") %></label>
     		<%= address.text_field :phone -%>

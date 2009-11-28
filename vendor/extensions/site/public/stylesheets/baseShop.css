@@ -65,7 +65,7 @@ border-top:1px solid #636363;
 padding:17px 0 0;
 }
  
-.title {
+#footer .title {
 background:transparent url(/images/dwn_arrow.gif) no-repeat scroll right 28px;
 border-bottom:1px solid #636363;
 font-size:24px;
