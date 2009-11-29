@@ -1,5 +1,6 @@
 log/development.log
 db/development.sqlite3.db
+tmp
 public/assets
 public/images/3rd_pitch_bg.jpg
 public/images/dwn_arrow.gif
