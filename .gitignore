@@ -44,3 +44,6 @@ public/stylesheets/admin/dashboard.css
 public/stylesheets/queso.css
 .loadpath
 public/images/admin/bg/spree_50.png~
+public/stylesheets/sass/baseShop.sass
+public/stylesheets/compiled/baseShop.css
+public/stylesheets/vino.css
