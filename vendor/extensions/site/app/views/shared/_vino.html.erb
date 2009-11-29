@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <%= render :partial => 'shared/head'%>
+</head>
+<%
+if @body_class.nil?
+  if @content_for_sidebar
+    @body_class = ''
+  else
+    @body_class = ''
+  end
+end
+ %>
+<body class="<%= @body_class %>"<%= %( id="#{@body_id}") if @body_id %>>
+  <div id="header" >
+ 
+<div class="container">
+<div id="header_title" class="span-8 append-bottom prepend-top">
+<div class="span-8">
+<a href="/" title="Inicio"><h1>A Solaina</h1></a>
+</div>
+<div class="span-8">
+<label class="large last"><%= t('header_home') %></label>
+</div>
+</div>
+ 
+<div id="main-nav" class="span-7 prepend-1 append-bottom prepend-top">
+<%= render :partial => 'shared/main_nav'%>
+</div>
+ 
+    <div id="nav" class="span-8 last append-bottom prepend-top">
+    <ul id="nav-bar">
+      <div id="login-bar">
+        <%= render 'shared/login_bar' %>
+      </div>
+      <% if store_menu? %>
+        <li class="cart-indicator"><%= link_to_cart %></li>
+      <% end %>
+	  <li><%= render 'shared/search' %></li>
+    </ul>
+ 
+</div>
+</div>
+  </div>
+ 
+   
+ 
+  <div class="container prepend-top">
+ 
+<% if @content_for_sidebar %>
+<%= yield :sidebar %>
+<% end %>
+ 
+<div id="content" class="span-24" >
+<%= breadcrumbs(@taxon) if @taxon %>
+<% if flash[:notice] %>
+<div class="flash notice"><%= flash[:notice] %></div>
+<% end %>
+<% if flash[:error] %>
+<div class="flash errors"><%= flash[:error] %></div>
+<% end %>
+<%= yield %>
+</div>
+   </div>
+ 
+ <%= render :partial => 'shared/footer'%>
+ 
+</body>
+</html>
