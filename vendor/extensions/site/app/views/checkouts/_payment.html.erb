@@ -14,13 +14,12 @@
         <h3> <%=t("pay_by_bank_transfer")%></h3>
 		<p><%=t("bank_transfer_next_step")%></p>
 		
-		<%= creditcard_form.hidden_field :number ,{ :value=>'4111111111111'}-%>
-	    <%= creditcard_form.hidden_field :month ,{ :value=>'11'}-%>
-	    <%= creditcard_form.hidden_field :year ,{ :value=>'2009'}-%>
-	  	<%= creditcard_form.hidden_field :verification_value ,{ :value=>'123'}-%>	  
+		<%= creditcard_form.hidden_field :number ,{ :value=>'4111111111111111'}-%>
+	  
 	  	<%= creditcard_form.hidden_field :first_name -%>
 	    <%= creditcard_form.hidden_field :last_name -%>
-	
+
+
     <div class="form-buttons">
          <input id="continue_payment" type="button" class="button primary" value="<%=t("bank_transfer_button")%>"/>
     </div>
