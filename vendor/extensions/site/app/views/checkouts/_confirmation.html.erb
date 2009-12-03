@@ -1,0 +1,22 @@
+<h2><%= t("confirm") %></h2>
+<div class="inner container">         
+	<input id="final_answer" name="final_answer" type="hidden">
+	<div class="prepend-top">
+	
+	<div id="bdisplay" class="span-6 box prepend-top"><h3><%= t("billing_address")%></h3> <div><img src="/images/ajax_loader.gif" id="bconfirm_loader" /></div></div>
+	<div id="sdisplay"  class="span-6 box prepend-top last"><h3><%= t("shipping_address")%></h3> <div><img src="/images/ajax_loader.gif" id="sconfirm_loader" /></div></div>
+	</div>
+	<div id="bank_transfer_info" class="box span-23">
+		<p><%= t("bank_transfer_info_1") %></p>
+		<p><%= t("bank_transfer_info_2") %></p>
+		 <p><%= t("bank_transfer_info_3") %></p>
+	</div>
+	
+	<div class="clear"></div>
+	<div class="box span-23 last">
+	<%= render :partial => 'shared/order_details', :locals => {:order => @order} -%>    
+	</div>  
+  <div class="form-buttons">
+    <%= submit_tag t('place_order'), {:id => "continue_confirmation", :class => "button primary"}  %>
+  </div>
+</div>
