@@ -17,6 +17,7 @@ class SiteExtension < Spree::Extension
       preference :stylesheets, :string, :default => 'compiled/screen,compiled/baseShop,dropdown'
       preference :site_name, :string, :default => 'Tapershop demo site'
       preference :site_url, :string, :default => 'demo.tapershop.com'
+      preference :default_title, :string, :default => 'Hacemos tiendas online y funcionan'
       preference :mails_from, :string
       preference :mail_bcc, :string
       preference :order_from, :string, :default => "orders@tapershop.com"
