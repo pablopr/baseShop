@@ -2,9 +2,9 @@
 
 # Uncomment below to force Rails into production mode when
 # you don't control web/app server and can't set it the proper way
-# ENV['RAILS_ENV'] ||= 'production'
+ENV['RAILS_ENV'] ||= 'production'
 #Descomentar si no encuentra las gemas al hacer el rake
-#ENV['GEM_PATH'] = '/home/username/ruby/gems:/usr/lib/ruby/gems/1.8'
+ENV['GEM_PATH'] = '/home/queso/ruby/gems:/usr/lib/ruby/gems/1.8'
 # Specifies gem version of Rails to use when vendor/rails is not present
 SPREE_GEM_VERSION = '0.9.99' unless defined? SPREE_GEM_VERSION
 
@@ -33,7 +33,7 @@ Spree::Initializer.run do |config|
   config.gem "activemerchant", :lib => "active_merchant", :version => '>=1.4.1'
   config.gem "tlsmail", :version => '0.0.1'
   config.gem 'activerecord-tableless', :lib => 'tableless', :version => '>=0.1.0'
-  config.gem 'haml', :version => '>=2.2.0'
+  config.gem 'haml', :version => '=2.2.0'
   config.gem 'compass', :version => '0.8.17', :source => "http://gemcutter.org"
   config.gem 'calendar_date_select', :version => '1.15'
   config.gem 'rsl-stringex', :lib => 'stringex', :source => "http://gems.github.com"
