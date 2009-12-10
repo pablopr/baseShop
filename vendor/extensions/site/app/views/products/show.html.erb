@@ -1,3 +1,7 @@
+<% content_for :sidebar do %>
+<%= render :partial => "shared/taxonomies" %>
+<% end %>
+
 <% @body_id = 'product-details' %>
 
 <h2><%= @product.name %></h2>
