@@ -4,49 +4,34 @@
 
 <div id="footer" >
 
-   <div  class=" footer_wrap container">
+   <div  class="container" id="footer_wrap">
 	
-	<div class="span-7 append-1">
-		<h2 class="title ">
+	<div class="span-6" id="footer_left_wrap">
+		<h3 class="">
 				Información
-		</h2>
+		</h3>
 			<ul id="navigation">	    
-				<% for page in Page.footer_links do %>
+				<% for page in Page.header_links do %>
 				     <li><%= link_to page.title, page.link %></li>
 				 <% end %>
 			</ul>
 
     </div>
     
-	<div class="span-7 append-1">
-			<h2 class="title ">
-				Noticias
-			</h2>
+	<div class="span-18 last" id="botellas">
+		   <div class="span-5" id="links_botellas">
 		   	<ul id="navigation">	    
 				<% for page in Page.footer_links do %>
 				     <li><%= link_to page.title, page.link %></li>
 				 <% end %>
 			</ul>
-
-    </div>
-
-	<div class="span-8 last">
-			<h2 class="title ">
-				Seguridad
-			</h2>
-
-		    <ul id="navigation">	    
-				<% for page in Page.footer_links do %>
-				     <li><%= link_to page.title, page.link %></li>
-				 <% end %>
-			</ul>
-
+			</div>
     </div>
     
     
   </div>
 
-  <div class="footer_wrap container" >
+  <div class="container" >
   <p id="by_tapershop">
     <%= t("powered_by") %> <a href="http://tapershop.com/">Tiendas online Tapershop</a>
   </p>
