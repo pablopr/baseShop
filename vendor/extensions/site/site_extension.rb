@@ -14,13 +14,14 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'dropdown,compiled/screen,compiled/baseShop'
+
+      preference :stylesheets, :string, :default => 'compiled/screen,queso,dropdown'
       preference :site_name, :string, :default => 'Tapershop demo site'
-      preference :site_url, :string, :default => 'demo.tapershop.com'
-      preference :default_title, :string, :default => 'Vinos y licores de galicia'
+      preference :site_url, :string, :default => 'quesogallego.com'
+      preference :default_title, :string, :default => 'Quesos de Galicia'
       preference :mails_from, :string
       preference :mail_bcc, :string
-      preference :order_from, :string, :default => "orders@tapershop.com"
+      preference :order_from, :string, :default => "info@quesogallego.com"
       preference :order_bcc, :string
       preference :default_locale, :string, :default => 'es'
       preference :allow_locale_switching, :boolean, :default => false
