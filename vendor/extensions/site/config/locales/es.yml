@@ -631,7 +631,7 @@ es:
   bank_transfer_button: "Pagar por transferencia"
   bank_transfer_info_1: "Has elegido el modo de pago por transferencia bancaria. En cuanto confirmes tu pedido recibirás en la cuenta de correo que asociaste a tu compra, los datos de tu pedido y nuestro número de cuenta, donde deberás hacer el ingreso del importe total de tu compra. Recuerda, es imprescindible, poner en el concepto, tu número de pedido. Si pudieras enviarnos por mail el justificante del ingreso, serviría para agilizar el envío, ya que puede tardar hasta 3 días en figurar en la cuenta."
   bank_transfer_info_2: "Recuerda: Se realizará el envío a partir de la recepción del ingreso bancario, o su justificante."
-  bank_transfer_info_3: "Para más información o cualquier tipo de duda contacta con nosotros a través de soporte@tapershop.com"
+  bank_transfer_info_3: "Para más información o cualquier tipo de duda contacta con nosotros a través de contacto@qpomo.com"
   bank_transfer_bank_name: "Caixa"
   bank_transfer_account_owner: "Ferrva S.L."
   bank_transfer_bank_number: "2100 5875 81 0200027963  "
