@@ -185,7 +185,7 @@ color:#831026;
 			root element for the scrollable.
 			when scrolling occurs this element stays still.
 		*/
-		.scrollable_horizontal {
+	#ambientes	.scrollable_horizontal {
 
 			/* required settings */
 			position:relative;
@@ -205,7 +205,7 @@ color:#831026;
 			it's enough that you set the width and height for the root element and
 			not for this element.
 		*/
-		.scrollable_horizontal .items {
+	#ambientes	.scrollable_horizontal .items {
 			/* this cannot be too large */
 			width:20000em;
 			position:absolute;
@@ -213,7 +213,7 @@ color:#831026;
 		}
 
 		/* single scrollable item */
-		.scrollable_horizontal img {
+	#ambientes	.scrollable_horizontal img {
 			float:left;
 			margin:20px 5px 20px 21px;
 			background-color:#fff;
@@ -228,22 +228,22 @@ color:#831026;
 		}
 
 		/* active item */
-		.scrollable_horizontal .active {
+	#ambientes	.scrollable_horizontal .active {
 			border:2px solid #000;
 			z-index:9999;
 			position:relative;
 		}
 
-		
+
 
 
 		/* remove margins from the image */ 
-		.items img { 
+	#ambientes	.items img { 
 		    margin:20px 6px;
 		} 
 
 		/* make A tags our floating scrollable items */ 
-		.items a { 
+	#ambientes	.items a { 
 		    display:block; 
 		    float:left; 
 		    margin: 0; 
@@ -251,7 +251,7 @@ color:#831026;
 
 
 		/* tooltip styling */ 
-		#tooltip { 
+	#ambientes	#tooltip { 
 		    display:none; 
 		    background:url(/images/scrollable/black_arrow.png); 
 		    font-size:12px; 
@@ -261,18 +261,18 @@ color:#831026;
 		    color:#fff; 
 			z-index:5;
 		}
-		
+
 		/* scrollable should not disable gallery navigation */ 
-		#gallery .disabled { 
+	#ambientes	#gallery .disabled { 
 		    visibility:visible !important; 
 		} 
 
-		#gallery .inactive { 
+	#ambientes	#gallery .inactive { 
 		    visibility:hidden !important; 
 		}
-		
+
 		/* active item */ 
-		.scrollable_horizontal .active { 
+	#ambientes	.scrollable_horizontal .active { 
 		    border:1px solid #fff; 
 		    outline:2px solid #000; 
 
@@ -282,12 +282,12 @@ color:#831026;
 		}
 
 		/* this makes it possible to add next button beside scrollable */
-		.scrollable_horizontal {
+	#ambientes	.scrollable_horizontal {
 			float:left;	
 		}
 
 		/* prev, next, prevPage and nextPage buttons */
-		a.browse {
+	#ambientes	a.browse {
 			background:url(/images/scrollable/hori_large.png) no-repeat;
 			display:block;
 			width:30px;
@@ -299,40 +299,40 @@ color:#831026;
 		}
 
 		/* right */
-		a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+	#ambientes	a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
 		a.right:hover 		{ background-position:-30px -30px; }
 		a.right:active 	{ background-position:-60px -30px; } 
 
 
 		/* left */
-		a.left				{ margin-left: 0px; } 
-		a.left:hover  		{ background-position:-30px 0; }
-		a.left:active  	{ background-position:-60px 0; }
+	#ambientes	a.left				{ margin-left: 0px; } 
+	#ambientes	a.left:hover  		{ background-position:-30px 0; }
+	#ambientes	a.left:active  	{ background-position:-60px 0; }
 
 		/* up and down */
-		a.up, a.down		{ 
+	#ambientes	a.up, a.down		{ 
 			background:url(/images/scrollable/vert_large.png) no-repeat; 
 			float: none;
 			margin: 10px 50px;
 		}
 
 		/* up */
-		a.up:hover  		{ background-position:-30px 0; }
-		a.up:active  		{ background-position:-60px 0; }
+	#ambientes	a.up:hover  		{ background-position:-30px 0; }
+	#ambientes	a.up:active  		{ background-position:-60px 0; }
 
 		/* down */
-		a.down 				{ background-position: 0 -30px; }
-		a.down:hover  		{ background-position:-30px -30px; }
-		a.down:active  	{ background-position:-60px -30px; } 
+	#ambientes	a.down 				{ background-position: 0 -30px; }
+	#ambientes	a.down:hover  		{ background-position:-30px -30px; }
+	#ambientes	a.down:active  	{ background-position:-60px -30px; } 
 
 
 		/* disabled navigational button */
-		a.disabled {
+	#ambientes	a.disabled {
 			visibility:hidden !important;		
 		} 	
-		
+
 		/* the overlayed element */
-		.simple_overlay {
+	#ambientes	.simple_overlay {
 
 			/* must be initially hidden */
 			display:none;
@@ -353,7 +353,7 @@ color:#831026;
 		}
 
 		/* close button positioned on upper right corner */
-		.simple_overlay .close {
+	#ambientes	.simple_overlay .close {
 			background-image:url(/images/scrollable/close.png);
 			position:absolute;
 			right:-15px;
@@ -362,14 +362,14 @@ color:#831026;
 			height:35px;
 			width:35px;
 		}
-		
+
 		/* the large image. we use a gray border around it */
-		#img {
+	#ambientes	#img {
 			border:1px solid #666;
 		}
 
 		/* "next image" and "prev image" links */
-		.next, .prev {
+	#ambientes	.next, .prev {
 
 			/* absolute positioning relative to the overlay */
 			position:absolute;
@@ -386,7 +386,7 @@ color:#831026;
 			-webkit-border-radius:5px;	
 		}
 
-		.prev {
+	#ambientes	.prev {
 			left:0;
 			border-left:0;
 			-moz-border-radius-topleft:0;
@@ -395,7 +395,7 @@ color:#831026;
 			-webkit-border-top-left-radius:0;
 		}
 
-		.next {
+	#ambientes	.next {
 			right:0;
 			border-right:0;
 			-moz-border-radius-topright:0;
@@ -404,18 +404,18 @@ color:#831026;
 			-webkit-border-top-right-radius:0;	
 		}
 
-		.next:hover, .prev:hover {
+	#ambientes	.next:hover, .prev:hover {
 			text-decoration:underline;
 			background-color:#000;
 		}
 
 		/* when there is no next or previous link available this class is added */
-		.disabled {
+	#ambientes	.disabled {
 			visibility:hidden;		
 		}
 
 		/* the "information box" */
-		.infor {
+	#ambientes	.infor {
 			position:absolute;
 			bottom:0;
 			left:0;	
@@ -425,12 +425,12 @@ color:#831026;
 			border-top:1px solid #666;
 		}
 
-		.infor strong {
+	#ambientes	.infor strong {
 			display:block;	
 		}
 
 		/* progress indicator (animated gif). should be initially hidden */
-		.progress {
+	#ambientes	.progress {
 			position:absolute;
 			top:45%;
 			left:50%;
@@ -438,9 +438,12 @@ color:#831026;
 		}
 
 		/* everybody should know about RGBA colors. */
-		.next, .prev, .infor {
+	#ambientes	.next, .prev, .infor {
 			background:#333 !important;
 			background:rgba(0, 0, 0, 0.6) url(/images/scrollable/h80.png) repeat-x;		
 		}
-		
+	
+
+	
+	
 		

@@ -12,7 +12,7 @@ class AppConfiguration < Configuration
   preference :store_cc, :boolean, :default => false
   preference :store_cvv, :boolean, :default => false
   
-   preference :stylesheets, :string, :default => 'compiled/screen,qpomo,dropdown'
+   preference :stylesheets, :string, :default => 'compiled/screen,compiled/qpomo,dropdown'
    preference :site_name, :string, :default => 'QPomo.com'
    preference :site_url, :string, :default => 'qpomocom'
    preference :mails_from, :string
