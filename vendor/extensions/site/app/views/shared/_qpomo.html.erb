@@ -2,17 +2,23 @@
 <head>
    <%= render :partial => 'shared/head'%>
 <meta name="google-site-verification" content="N8YjFCR2Al_4vccPhV_7tG_McsETq5sg5k1EfTr92wo" />
-</head>
-<%
-if @body_class.nil?
-  if @content_for_sidebar
-    @body_class = ''
-  else
-    @body_class = ''
-  end
-end
- %>
-<body class="<%= @body_class %>"<%= %( id="#{@body_id}") if @body_id %>>
+
+	<!-- Full version of jQuery Tools + jQuery 1.3.2 -->
+	<script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+	</head>
+
+	<%
+	if @body_class.nil?
+	  if @content_for_sidebar
+	    @body_class = ''
+	  else
+	    @body_class = ''
+	  end
+	end
+	 %>
+	<!-- without body tag IE may have unprodictable behaviours -->
+	<body class="<%= @body_class %>"<%= %( id="#{@body_id}") if @body_id %>>
+
   <div id="header" >
 	
 	<div class="container">
@@ -53,7 +59,10 @@ end
 		      <%= yield :sidebar %>
 		<% end %>
 		
+		
+		 
 		<% if @products %>
+			 <%= render :partial => 'shared/scrollable_horizontal'%> 
 	    	<div id="content" class="span-20" >
 		<% else %>
 		    <div id="content" class="span-24" >
@@ -68,17 +77,20 @@ end
 	      <% end %>
 	      <%= yield %>
 	    </div>
-	
-	     
-		<% if @products %>
+		
+		 <% if @products %>
 		<div id="" class="span-4 last" >
-			  <%= render :partial => "shared/scrollable_gallery.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
+		<%= render :partial => "shared/scrollable_gallery.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
 		</div>
-	    <% end %>
+		<% end %>
+	     
+	
 	   
    </div>
 
  <%= render :partial => 'shared/footer'%>   
+
+
 
 </body>
 </html>
