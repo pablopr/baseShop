@@ -1,0 +1,109 @@
+<div id="ambientes" class="span-24" >
+	
+	<a class="prevPage browse left "></a>
+	<!-- root element for scrollable --> 
+	<div class="scrollable_horizontal"> 
+
+	    <!-- root element for the items --> 
+	    <div class="items"> 
+	        
+			<a  href="/images/ambientes/1.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/1.jpg"/>
+			</a>
+			<a  href="/images/ambientes/2.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/2.jpg"/>
+			</a>
+			<a  href="/images/ambientes/3.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/3.jpg"/>
+			</a>
+			<a  href="/images/ambientes/4.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/4.jpg"/>
+			</a>
+			<a  href="/images/ambientes/5.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/5.jpg"/>
+			</a>
+			<a  href="/images/ambientes/6.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/6.jpg"/>
+			</a>
+			<a  href="/images/ambientes/7.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/7.jpg"/>
+			</a>
+			<a  href="/images/ambientes/8.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/8.jpg"/>
+			</a>
+			<a  href="/images/ambientes/9.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/9.jpg"/>
+			</a>
+			<a  href="/images/ambientes/10.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/10.jpg"/>
+			</a>
+			<a  href="/images/ambientes/11.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/11.jpg"/>
+			</a>
+			<a  href="/images/ambientes/12.jpg" title="El pomo en su entorno">
+			<img width="100" height="75"  alt=""  src="/images/ambientes/12.jpg"/>
+			</a>
+			
+			
+	    </div> 
+
+	</div> 
+	
+	<!-- one single tooltip element --> 
+	<div id="tooltip"></div>
+	
+	<a class="nextPage browse right "></a>
+	
+	
+	<br clear="all" />
+	
+	<!-- overlay element --> 
+	<div class="simple_overlay" id="gallery"> 
+
+	    <!-- "previous image" action --> 
+	    <a class="prev">prev</a> 
+
+	    <!-- "next image" action --> 
+	    <a class="next">sig</a> 
+
+	    <!-- image information --> 
+	    <div class="infor"></div> 
+
+	    <!-- load indicator (animated gif) --> 
+	    <img class="progress" src="http://static.flowplayer.org/tools/img/overlay/loading.gif" /> 
+	</div>
+</div>
+
+
+<!-- javascript coding -->
+<script>
+
+
+$(document).ready(function() {
+/* chained call: scrollable().find("a").tooltip().overlay().gallery(); */
+
+$(".scrollable_horizontal").scrollable().find("a").tooltip({
+
+	// use this single tooltip element for all trigger elements
+	tip: '#tooltip'
+
+
+}).overlay({
+
+	// each trigger uses the same overlay with id "gallery"
+	target: '#gallery',
+
+	// optional exposing effect with custom color
+	expose: '#111',
+
+	// clicking outside the overlay does not close it
+	closeOnClick: false
+
+// gallery plugin
+}).gallery({
+	info:  	'.infor',
+	// do not use the same disabled class name as scrollable
+	disabledClass: 'inactive'
+});
+});
+</script>

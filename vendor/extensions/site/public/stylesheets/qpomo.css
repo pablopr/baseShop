@@ -75,13 +75,7 @@ ul#nav-bar {
 #footer {
 margin-top:3em;
 }
-
-.footer_wrap {
-background:url(/images/footer_bg.gif) repeat-x left top;
-padding:17px 0 0;
-}
-
-.title {
+#footer .title {
 background:url(/images/footer_bg.gif) repeat-x left bottom;
 font-size:24px;
 font-size-adjust:none;
@@ -92,6 +86,16 @@ font-weight:bold;
 height:66px;
 line-height:24px;
 }
+
+.footer_wrap {
+background:url(/images/footer_bg.gif) repeat-x left top;
+padding:17px 0 0;
+}
+
+#cart-form {
+width:300px;
+}
+
 #by_tapershop{
 	font-size:0.8em;
 }
@@ -128,14 +132,20 @@ a, a:visited {
 color:#831026;	
 }
 
+#ambientes{
+	margin: 30px 5px;
+}
+
+
+
 /* scrollable gallery */
-	.items {
+	.scrollable .items {
 		height:20000em;
 		margin:0;
 		position:absolute;
 		}
 
-		.items div {
+		.scrollable .items div {
 		font-size:10px;
 		height:120px;
 		margin:10px 0;
@@ -144,7 +154,7 @@ color:#831026;
 		background:transparent url(/images/fondo_gris.gif) no-repeat scroll 0 0;
 		}
 		
-		.items div .info{
+		.scrollable .items div .info{
 			padding-left:30px;
 		}
 
@@ -155,7 +165,7 @@ color:#831026;
 		width:160;
 		}
 
-		.items img {
+		.scrollable .items img {
 		float:left;
 		height:100px;
 		margin:10px 45px;
@@ -172,4 +182,270 @@ color:#831026;
 		margin-left:0%;
 		float: left;
 		}
+		
+		/*
+			root element for the scrollable.
+			when scrolling occurs this element stays still.
+		*/
+	#ambientes	.scrollable_horizontal {
 
+			/* required settings */
+			position:relative;
+			overflow:hidden;
+			width: 800px;
+			height:120px;
+			margin:0 15px;
+
+			/* custom decorations */
+			border:1px solid #ccc;
+			background:url(/images/scrollable/h300.png) repeat-x;
+		}
+
+		/*
+			root element for scrollable items. Must be absolutely positioned
+			and it should have a extremely large width to accomodate scrollable items.
+			it's enough that you set the width and height for the root element and
+			not for this element.
+		*/
+	#ambientes	.scrollable_horizontal .items {
+			/* this cannot be too large */
+			width:20000em;
+			position:absolute;
+			clear:both;
+		}
+
+		/* single scrollable item */
+	#ambientes	.scrollable_horizontal img {
+			float:left;
+			margin:20px 5px 20px 21px;
+			background-color:#fff;
+			padding:2px;
+			border:1px solid #ccc;
+			cursor:pointer;
+			width:100px;
+			height:75px;
+
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+		}
+
+		/* active item */
+	#ambientes	.scrollable_horizontal .active {
+			border:2px solid #000;
+			z-index:9999;
+			position:relative;
+		}
+
+
+
+
+		/* remove margins from the image */ 
+	#ambientes	.items img { 
+		    margin:20px 6px;
+		} 
+
+		/* make A tags our floating scrollable items */ 
+	#ambientes	.items a { 
+		    display:block; 
+		    float:left; 
+		    margin: 0; 
+		}  
+
+
+		/* tooltip styling */ 
+	#ambientes	#tooltip { 
+		    display:none; 
+		    background:url(/images/scrollable/black_arrow.png); 
+		    font-size:12px; 
+		    height:70px; 
+		    width:160px; 
+		    padding:25px; 
+		    color:#fff; 
+			z-index:5;
+		}
+
+		/* scrollable should not disable gallery navigation */ 
+	#ambientes	#gallery .disabled { 
+		    visibility:visible !important; 
+		} 
+
+	#ambientes	#gallery .inactive { 
+		    visibility:hidden !important; 
+		}
+
+		/* active item */ 
+	#ambientes	.scrollable_horizontal .active { 
+		    border:1px solid #fff; 
+		    outline:2px solid #000; 
+
+		    /* these two settings makes it visible over the mask */ 
+		    z-index:9999; 
+		    position:relative; 
+		}
+
+		/* this makes it possible to add next button beside scrollable */
+	#ambientes	.scrollable_horizontal {
+			float:left;	
+		}
+
+		/* prev, next, prevPage and nextPage buttons */
+	#ambientes	a.browse {
+			background:url(/images/scrollable/hori_large.png) no-repeat;
+			display:block;
+			width:30px;
+			height:30px;
+			float:left;
+			margin:40px 10px;
+			cursor:pointer;
+			font-size:1px;
+		}
+
+		/* right */
+	#ambientes	a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+		a.right:hover 		{ background-position:-30px -30px; }
+		a.right:active 	{ background-position:-60px -30px; } 
+
+
+		/* left */
+	#ambientes	a.left				{ margin-left: 0px; } 
+	#ambientes	a.left:hover  		{ background-position:-30px 0; }
+	#ambientes	a.left:active  	{ background-position:-60px 0; }
+
+		/* up and down */
+	#ambientes	a.up, a.down		{ 
+			background:url(/images/scrollable/vert_large.png) no-repeat; 
+			float: none;
+			margin: 10px 50px;
+		}
+
+		/* up */
+	#ambientes	a.up:hover  		{ background-position:-30px 0; }
+	#ambientes	a.up:active  		{ background-position:-60px 0; }
+
+		/* down */
+	#ambientes	a.down 				{ background-position: 0 -30px; }
+	#ambientes	a.down:hover  		{ background-position:-30px -30px; }
+	#ambientes	a.down:active  	{ background-position:-60px -30px; } 
+
+
+		/* disabled navigational button */
+	#ambientes	a.disabled {
+			visibility:hidden !important;		
+		} 	
+
+		/* the overlayed element */
+	#ambientes	.simple_overlay {
+
+			/* must be initially hidden */
+			display:none;
+
+			/* place overlay on top of other elements */
+			z-index:10000;
+
+			/* styling */
+			background-color:#333;
+
+			width:675px;	
+			min-height:200px;
+			border:1px solid #666;
+
+			/* CSS3 styling for latest browsers */
+			-moz-box-shadow:0 0 90px 5px #000;
+			-webkit-box-shadow: 0 0 90px #000;	
+		}
+
+		/* close button positioned on upper right corner */
+	#ambientes	.simple_overlay .close {
+			background-image:url(/images/scrollable/close.png);
+			position:absolute;
+			right:-15px;
+			top:-15px;
+			cursor:pointer;
+			height:35px;
+			width:35px;
+		}
+
+		/* the large image. we use a gray border around it */
+	#ambientes	#img {
+			border:1px solid #666;
+		}
+
+		/* "next image" and "prev image" links */
+	#ambientes	.next, .prev {
+
+			/* absolute positioning relative to the overlay */
+			position:absolute;
+			top:40%;	
+			border:1px solid #666;	
+			cursor:pointer;
+			display:block;
+			padding:10px 20px;
+			color:#fff;
+			font-size:11px;
+
+			/* upcoming CSS3 features */
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;	
+		}
+
+	#ambientes	.prev {
+			left:0;
+			border-left:0;
+			-moz-border-radius-topleft:0;
+			-moz-border-radius-bottomleft:0;
+			-webkit-border-bottom-left-radius:0;
+			-webkit-border-top-left-radius:0;
+		}
+
+	#ambientes	.next {
+			right:0;
+			border-right:0;
+			-moz-border-radius-topright:0;
+			-moz-border-radius-bottomright:0;
+			-webkit-border-bottom-right-radius:0;
+			-webkit-border-top-right-radius:0;	
+		}
+
+	#ambientes	.next:hover, .prev:hover {
+			text-decoration:underline;
+			background-color:#000;
+		}
+
+		/* when there is no next or previous link available this class is added */
+	#ambientes	.disabled {
+			visibility:hidden;		
+		}
+
+		/* the "information box" */
+	#ambientes	.infor {
+			position:absolute;
+			bottom:0;
+			left:0;	
+			padding:10px 15px;
+			color:#fff;
+			font-size:11px;
+			border-top:1px solid #666;
+		}
+
+	#ambientes	.infor strong {
+			display:block;	
+		}
+
+		/* progress indicator (animated gif). should be initially hidden */
+	#ambientes	.progress {
+			position:absolute;
+			top:45%;
+			left:50%;
+			display:none;
+		}
+
+		/* everybody should know about RGBA colors. */
+	#ambientes	.next, .prev, .infor {
+			background:#333 !important;
+			background:rgba(0, 0, 0, 0.6) url(/images/scrollable/h80.png) repeat-x;		
+		}
+	
+
+	
+	
+		
