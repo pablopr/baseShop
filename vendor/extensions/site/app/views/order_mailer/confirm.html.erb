@@ -1,5 +1,10 @@
 Estimado cliente,
-<% if @order.state == "new" -%>
+
+estado es <%=  @order.state -%>
+
+<% if not @order.state == "new" -%>
+Hemos recibido el pago de su pedido vía PayPal. En pocos días lo recibirá en la dirección indicada.
+<% else -%>
 <%= t("bank_transfer_info_mail") %>
 
 Datos Bancarios:
