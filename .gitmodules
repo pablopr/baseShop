@@ -19,3 +19,6 @@
 [submodule "vendor/spree"]
 	path = vendor/spree
 	url = git://github.com/railsdog/spree.git
+[submodule "vendor/extensions/titles"]
+	path = vendor/extensions/titles
+	url = git://github.com/eliotsykes/spree-titles.git
