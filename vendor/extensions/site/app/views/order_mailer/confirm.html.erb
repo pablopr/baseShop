@@ -1,5 +1,5 @@
 Estimado cliente,
-
+<% if @order.state == "new" -%>
 <%= t("bank_transfer_info_mail") %>
 
 Datos Bancarios:
@@ -8,6 +8,8 @@ Titular: <%= t("bank_transfer_account_owner") %>
 Número de cuenta: <%= t("bank_transfer_bank_number") %>
 
 <%= t("bank_transfer_info_3") %>
+
+<% end -%>
 
 Por favor revisa y guarda la información de tu pedido mostrada a continuación  
 
