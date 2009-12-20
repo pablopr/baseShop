@@ -30,9 +30,7 @@ class Checkout < ActiveRecord::Base
     #return false unless cc.valid? 
 
     #return false unless cc.authorize(order.total)
-
     return false unless order.complete
-
     true
   end
 

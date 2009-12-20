@@ -40,6 +40,7 @@ class PaypalExpressExtension < Spree::Extension
        @amount = params[:amount] || @order.total
        @states = State.find_all_by_country_id(@selected_country_id, :order => 'name')  
        @countries = Country.find(:all)
+       
      end
      
    end
