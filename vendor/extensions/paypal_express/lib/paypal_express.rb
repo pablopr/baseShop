@@ -102,7 +102,7 @@ module PaypalExpress
     
     
     
-    @order.checkout.completed_at = Time.now
+    #@order.checkout.completed_at = Time.now
     
     
 
