@@ -19,8 +19,10 @@ color: #FFF;
 #header_title label {
 color: #636363;
 }
- 
- 
+
+#content{ 
+	min-height: 530px;
+ }
 ul#navigation li a {
 background:transparent url(/images/icn_nav.gif) no-repeat scroll 0 0;
 display:block;

@@ -3,6 +3,9 @@ background:none;
 margin-top:0;
 }
  
+#content{ 
+	min-height: 530px;
+ }
 .header-box{
 border-bottom:1px solid #636363;
 border-top:1px solid #636363;
