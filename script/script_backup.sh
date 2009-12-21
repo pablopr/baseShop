@@ -23,7 +23,7 @@ DBNAMES="qpomo_spreelive"
 BACKUPDIR="/backups"
 
 # Directorios a copiar
-DIRECTORIES="/home/admin/www /etc"
+DIRECTORIES="/home/qpomo/tienda"
 
 # Nombre de la máquina
 COMPUTER=localhost 
