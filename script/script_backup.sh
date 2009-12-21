@@ -8,16 +8,16 @@
 #=====================================================================
 
 # Username to access the MySQL server e.g. dbuser
-USERNAME=dbuser
+USERNAME=qpomo_spree
 
 # Username to access the MySQL server e.g. password
-PASSWORD=password
+PASSWORD=deD6FPop
 
 # Host name (or IP address) of MySQL server e.g localhost
 DBHOST=localhost
 
 # List of DBNAMES for Daily/Weekly Backup e.g. "DB1 DB2 DB3"
-DBNAMES="DB1 DB2 DB3"
+DBNAMES="qpomo_spreelive"
 
 # Backup directory location e.g /backups
 BACKUPDIR="/backups"
