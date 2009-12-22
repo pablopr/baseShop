@@ -34,6 +34,7 @@ class SiteExtension < Spree::Extension
       preference :allow_ssl_in_production, :boolean, :default => false
       preference :allow_ssl_in_development_and_test, :boolean, :default => false
       preference :google_analytics_id, :string, :default => 'UA-12011630-1' # Replace with real Google Analytics Id
+      preference :allow_guest_checkout, :boolean, :default => false
       preference :alternative_billing_phone,  :boolean, :default => false # Request extra phone for bill addr
       preference :alternative_shipping_phone, :boolean, :default => false # Request extra phone for ship addr
       preference :shipping_instructions,      :boolean, :default => false # Request instructions/info for shipping 
