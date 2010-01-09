@@ -11,7 +11,7 @@
 USERNAME=pablopr_spree
 
 # Username to access the MySQL server e.g. password
-PASSWORD=deD6Pop
+PASSWORD=deD6FPop
 
 # Host name (or IP address) of MySQL server e.g localhost
 DBHOST=localhost
