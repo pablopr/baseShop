@@ -12,9 +12,10 @@ test:
   database: db/test.sqlite3.db
   
 production:
-   adapter: mysql
-   encoding: utf8
-   database: qpomo_spreelive
-   username: qpomo_spree
-   password: deD6FPop
-   host: localhost
+
+  adapter: mysql
+  database: pablopr_spreelive
+  username: pablopr_spree
+  password: deD6FPop
+  host: localhost
+

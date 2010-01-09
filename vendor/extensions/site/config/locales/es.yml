@@ -620,7 +620,7 @@ es:
   overview_welcome_message: "Bienvenido al panel de administración de tu tienda. Ahora puedes manejar tu tienda con rápidez y sin romperte la cabeza. Para cualquier duda no dudes en ponerte en contacto con nosotros en www.Tapershop.com o en el gestor de incidencias de tu proyecto en "
   paypal_pay: Pago con Paypal 
   Paypal Express Settings: Paypal Express
-  header_home: hacemos tiendas online y funcionan
+  header_home: "Tienda oficial de Cucharillas Edu"
   check_your_email_order: "Comprueba tu email, te hemos enviado los detalles de tu compra. Gracias y vuelve pronto"
   error_paypal: "Desafortunadamente ha ocurrido un error durante la finalización de la compra:"
   contact_support: "contacta con nosotros para resolver el estado de tu compra."
@@ -632,8 +632,8 @@ es:
   bank_transfer_info_1: "Has elegido el modo de pago por transferencia bancaria. En cuanto confirmes tu pedido recibirás en la cuenta de correo que asociaste a tu compra, los datos de tu pedido y nuestro número de cuenta, donde deberás hacer el ingreso del importe total de tu compra. Recuerda, es imprescindible, poner en el concepto, tu número de pedido. Si pudieras enviarnos por mail el justificante del ingreso, serviría para agilizar el envío, ya que puede tardar hasta 3 días en figurar en la cuenta."
   bank_transfer_info_2: "Recuerda: Se realizará el envío a partir de la recepción del ingreso bancario, o su justificante."
   bank_transfer_info_3: "Para más información o cualquier tipo de duda contacta con nosotros a través de soporte@tapershop.com"
-  bank_transfer_bank_name: "nombre del banco"
-  bank_transfer_account_owner: "nombre del titular"
-  bank_transfer_bank_number: "numero de cuenta"
+  bank_transfer_bank_name: "Ing Direct"
+  bank_transfer_account_owner: "Javier Pazos Rey"
+  bank_transfer_bank_number: "1465 0100 99 1707683291"
   bank_transfer_info_mail: "Has elegido el modo de pago por transferencia bancaria. En este correo te adjuntamos los datos de tu pedido y nuestro número de Cuenta Bancaria, donde deberás hacer el ingreso del importe total de tu compra. Recuerda, es imprescindible, poner en el concepto, tu número de pedido. Si pudieras enviarnos por mail el justificante del ingreso, serviría para agilizar el envío, ya que puede tardar hasta 3 días en figurar en la cuenta."
 

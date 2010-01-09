@@ -14,13 +14,13 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'screen,baseShop,dropdown'
-      preference :site_name, :string, :default => 'Tapershop demo site'
-      preference :site_url, :string, :default => 'demo.tapershop.com'
-      preference :default_title, :string, :default => 'Hacemos tiendas online y funcionan'
+
+      preference :stylesheets, :string, :default => 'compiled/screen,compiled/cucharillas,dropdown'
+      preference :site_name, :string, :default => 'Tienda Cucharillas Edu'
+      preference :site_url, :string, :default => 'tiendacucharillasedu.com'
       preference :mails_from, :string
       preference :mail_bcc, :string
-      preference :order_from, :string, :default => "orders@tapershop.com"
+      preference :order_from, :string, :default => "soporte@tiendacucharillasedu.com"
       preference :order_bcc, :string
       preference :default_locale, :string, :default => 'es'
       preference :allow_locale_switching, :boolean, :default => false
@@ -30,12 +30,12 @@ class SiteExtension < Spree::Extension
       preference :admin_products_per_page, :integer, :default => 12 
       preference :products_per_page, :integer, :default => 15
       preference :default_tax_category, :string, :default => nil # Use the name (exact case) of the tax category if you wish to specify
-      preference :logo, :string, :default => '/images/logo.png'
+      preference :logo, :string, :default => '/images/logo1.png'
       preference :admin_interface_logo, :string, :default => "/images/logo.png"
       preference :allow_ssl_in_production, :boolean, :default => false
       preference :allow_ssl_in_development_and_test, :boolean, :default => false
-      preference :google_analytics_id, :string, :default => '' # Replace with real Google Analytics Id 
       preference :allow_guest_checkout, :boolean, :default => false 
+      preference :google_analytics_id, :string, :default => 'UA-11189532-1' # Replace with real Google Analytics Id 
       preference :alternative_billing_phone,  :boolean, :default => false # Request extra phone for bill addr
       preference :alternative_shipping_phone, :boolean, :default => false # Request extra phone for ship addr
       preference :shipping_instructions,      :boolean, :default => false # Request instructions/info for shipping 
