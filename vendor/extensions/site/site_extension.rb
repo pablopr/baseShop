@@ -14,13 +14,13 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'screen,baseShop,dropdown'
+      preference :stylesheets, :string, :default => 'screen,queso,dropdown'
       preference :site_name, :string, :default => 'Tapershop demo site'
-      preference :site_url, :string, :default => 'demo.tapershop.com'
-      preference :default_title, :string, :default => 'Hacemos tiendas online y funcionan'
+      preference :site_url, :string, :default => 'quesogallego.com'
+      preference :default_title, :string, :default => 'Quesos de Galicia'
       preference :mails_from, :string
       preference :mail_bcc, :string
-      preference :order_from, :string, :default => "orders@tapershop.com"
+      preference :order_from, :string, :default => "info@quesogallego.com"
       preference :order_bcc, :string
       preference :default_locale, :string, :default => 'es'
       preference :allow_locale_switching, :boolean, :default => false
@@ -34,7 +34,7 @@ class SiteExtension < Spree::Extension
       preference :admin_interface_logo, :string, :default => "/images/logo.png"
       preference :allow_ssl_in_production, :boolean, :default => false
       preference :allow_ssl_in_development_and_test, :boolean, :default => false
-      preference :google_analytics_id, :string, :default => '' # Replace with real Google Analytics Id 
+      preference :google_analytics_id, :string, :default => 'UA-12321716-1' # quesogallego.com Replace with real Google Analytics Id 
       preference :allow_guest_checkout, :boolean, :default => false 
       preference :alternative_billing_phone,  :boolean, :default => false # Request extra phone for bill addr
       preference :alternative_shipping_phone, :boolean, :default => false # Request extra phone for ship addr

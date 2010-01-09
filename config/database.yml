@@ -10,11 +10,10 @@ development:
 test:
   adapter: sqlite3
   database: db/test.sqlite3.db
-  
+ 
 production:
    adapter: mysql
-   encoding: utf8
-   database: qpomo_spreelive
-   username: qpomo_spree
+   database: queso_spreelive
+   username: queso_spree
    password: deD6FPop
    host: localhost
