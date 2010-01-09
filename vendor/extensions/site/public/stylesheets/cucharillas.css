@@ -1,0 +1,67 @@
+body {
+  background: none;
+  margin-top: 0; }
+
+.header-box {
+  border-color: #dde7f6;
+  border-bottom: 1px solid;
+  border-top: 1px solid; }
+
+#content {
+  min-height: 530px; }
+
+#header , #footer {
+  background-color: #006fb3;
+  color: #FFF; }
+  #header  h1, #header  h2, #header  a, #header  label, #footer h1, #footer h2, #footer a, #footer label {
+    color: #FFF; }
+
+#header_title label {
+  color: white; }
+
+ul#nav-bar {
+  line-height: 1.8em;
+  font-size: 1em; }
+
+ul#navigation li {
+  height: 22px; }
+  ul#navigation li a {
+    background: transparent url(/images/icn_nav.gif) no-repeat scroll 0 0;
+    display: block;
+    height: 15px;
+    padding-left: 22px; }
+
+#taxonomies {
+  margin-bottom: 1.5em; }
+  #taxonomies .dropdown li {
+    background: #006fb3;
+    padding: 5px; }
+    #taxonomies .dropdown li:hover {
+      background: #000; }
+    #taxonomies .dropdown li a {
+      color: white;
+      border: none; }
+
+#footer {
+  margin-top: 3em; }
+  #footer .title {
+    background: transparent url(/images/dwn_arrow.gif) no-repeat scroll right 28px;
+    border-bottom: 1px solid;
+    border-color: #dde7f6;
+    font-size: 24px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: 66px;
+    line-height: 24px; }
+
+#by_tapershop{ {
+  font-size: 0.8em; }
+
+div #checkout p label.error {
+  top: 5px; }
+
+.product-listing {
+  margin: 0 0 0; }

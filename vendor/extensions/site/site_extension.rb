@@ -14,7 +14,7 @@ class SiteExtension < Spree::Extension
   
   def activate 
     AppConfiguration.class_eval do 
-      preference :stylesheets, :string, :default => 'compiled/screen,compiled/cucharillas,dropdown'
+      preference :stylesheets, :string, :default => 'screen,cucharillas,dropdown'
       preference :site_name, :string, :default => 'Tienda Cucharillas Edu'
       preference :site_url, :string, :default => 'tiendacucharillasedu.com'
       preference :mails_from, :string
