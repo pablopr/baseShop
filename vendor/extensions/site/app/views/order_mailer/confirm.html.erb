@@ -1,5 +1,7 @@
 Estimado cliente,
-<% if @order.state == "new" -%>
+
+Si ha realizado  el pago de su pedido vía PayPal, ignore este correo. En pocos días lo recibirá en la dirección indicada.
+
 <%= t("bank_transfer_info_mail") %>
 
 Datos Bancarios:
@@ -9,7 +11,6 @@ Número de cuenta: <%= t("bank_transfer_bank_number") %>
 
 <%= t("bank_transfer_info_3") %>
 
-<% end -%>
 
 Por favor revisa y guarda la información de tu pedido mostrada a continuación  
 
