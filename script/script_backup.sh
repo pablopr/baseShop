@@ -21,7 +21,7 @@ DBHOST=localhost
 DBNAMES="vino_spreelive"
 
 # Backup directory location e.g /backups
-BACKUPDIR="/backups"
+BACKUPDIR="/home/vino/backups"
 
 # Directorios a copiar
 DIRECTORIES="/home/vino/baseShop"
