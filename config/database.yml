@@ -12,9 +12,8 @@ test:
   database: db/test.sqlite3.db
   
 production:
-   adapter: mysql
-   encoding: utf8
-   database: qpomo_spreelive
-   username: qpomo_spree
-   password: deD6FPop
-   host: localhost
+  adapter: mysql
+  database: vino_spreelive
+  username: vino_spree
+  password: estrech0s
+  host: localhost

@@ -2,7 +2,7 @@
 	<ul class="dropdown">
 		<% get_taxonomies.each do |taxonomy| %>
   
-		  	<li <%= 'class="current"' if @taxon && @taxon == taxonomy.root %>>
+		  	<li <%= 'class="master"' if taxonomy.root.children.size > 0 %>>
 			     <% if taxonomy.root.children.size > 0 %>
 			    	<%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %>
 			

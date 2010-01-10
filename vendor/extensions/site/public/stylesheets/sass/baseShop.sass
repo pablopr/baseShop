@@ -1,22 +1,36 @@
-!primary_color = #3E3E3E 
+!primary_color = #48021F 
 !secondary_color = #FFF 
-!third_color = #636363
-!fourth_color = #2E6AB1
+!third_color = #F3ECC0
+!granate_letras = #5D0429
 
 body 
-	:background none
+	:background  #EBE7E3 url(/images/bg-head.gif) repeat-x scroll left top
 	:margin-top 0
+	:font-size  0.8em
+
+	#wrapper
+		:background transparent url(/images/bg-foot.gif) repeat-x scroll 0 100%
+		:padding 0
+a
+	:text-decoration = none
 	
+input.title
+	:margin 0 0 20px
+
+.price.selling
+	:color = !granate_letras
 	
 .header-box
 	:border-color = !third_color
 	:border-bottom 1px solid 
 	:border-top 1px solid 
 	
+#head
+	:background transparent url(/images/bg-header.jpg) no-repeat scroll 0 0
+	:height = 190px
 
-#header ,#footer
-	:background-color = !primary_color
-	:color #FFF
+	
+#header
 	h1, h2, a, label
 		:color #FFF
 		
@@ -28,36 +42,48 @@ body
 #content 
 	:min-height 530px
 		
+		
 ul#nav-bar
 	:line-height 1.8em
 	:font-size 1em
+	li
+		:float right
+		
 ul#navigation 
+	:list-style-type none
 	li
 		:height 22px
 		a 
-			:background transparent url(/images/icn_nav.gif) no-repeat scroll 0 0
 			:display block
 			:height 15px
-			:padding-left 22px
 
 #taxonomies
 	:margin-bottom 1.5em
 	ul
+		:list-style-type none
 	.dropdown 
 		li 
 			:background = !primary_color
 			:padding 5px
-			&:hover
-				:background #000
 			a 
 				:color = !secondary_color
 				:border none
-				
+		.master
+			:background transparent url(/images/ttlRightDark.gif) no-repeat scroll left top
+			:padding 2px
+			:text-align center
+			:width 200px
+			:margin-right 2px 
+		ul
+			:width 204px
+			:text-align left
+			li 
+				&:hover
+					:background #5D0429
 				
 #footer
-	:margin-top 3em
 	.title
-		:background transparent url(/images/dwn_arrow.gif) no-repeat scroll right 28px
+		:background =transparent url(/images/dwn_arrow.gif) no-repeat scroll right 28px
 		:border-bottom 1px solid
 		:border-color = !third_color
 		:font-size 24px
@@ -67,10 +93,40 @@ ul#navigation
 		:font-variant normal
 		:font-weight bold
 		:height 66px
-		:line-height 24px
-
+		:line-height 24px	
+	a, p, label
+		:color = !granate_letras
+		:font-weight 700
+	#footer_wrap
+		:padding-left 30px
+	#footer_left_wrap
+		:min-height 128px
+		:background transparent url(/images/innerWidgetBg.gif) repeat-x scroll 0 0
+		:width 204px
+		h3
+			:background transparent url(/images/ttlRightLight.gif) no-repeat scroll left top
+			:color = !granate_letras
+			:padding-left 10px
+			:width 194px
+			:height 33px
+			:letter-spacing 0.5px
+			:line-height 33px
+			:margin-bottom 4px
+	#botellas
+		:background transparent url(/images/menu.png) no-repeat scroll 0 0
+		:height 220px
+		#links_botellas
+			:margin-top 70px
+			li
+				:height 25px
+				:margin 0
+				:padding 0
+				:width 264px
+				a
+					&:hover
+						:background transparent url(/images/headermenu-hover.gif) no-repeat scroll 0 0
 				
-#by_tapershop{
+#by_tapershop
 	:font-size 0.8em
 
 div
@@ -78,14 +134,37 @@ div
 		p 
 			label.error 
 				:top 5px
+	
+#content
+	:background #FFFFFF none repeat scroll 0 0
+	:padding-left 8px
+
 
 				
 .product-listing 
 	:margin 0 0 0
+	li
+		a.info
+			:color = !granate_letras
+			span
+				:color = !granate_letras
+				:font-weight 700
+		&:hover
+			:border-color = !granate_letras
+			a.info
+				:background-color = !granate_letras
+				span
+					:color = !third_color
 
+#keywords
+	:background transparent url(/images/deco_bg_language.gif) no-repeat scroll right 0
+	:font-size 10px
+	:height 24px
+	:width 191px
+	:padding 5px 0px
+	:border none
+	:color = !secondary_color
 
-		
-				
-	
-
+.flash.notice 
+	:width 905px
 

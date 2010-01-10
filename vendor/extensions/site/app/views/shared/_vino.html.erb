@@ -12,20 +12,18 @@ if @body_class.nil?
 end
  %>
 <body class="<%= @body_class %>"<%= %( id="#{@body_id}") if @body_id %>>
+	<div id="wrapper">
   <div id="header" >
  
-<div class="container">
+<div class="container" id="head">
 <div id="header_title" class="span-8 append-bottom prepend-top">
 <div class="span-8">
 <a href="/" title="Inicio"><h1>A Solaina</h1></a>
 </div>
-<div class="span-8">
-<label class="large last"><%= t('header_home') %></label>
-</div>
 </div>
  
 <div id="main-nav" class="span-7 prepend-1 append-bottom prepend-top">
-<%= render :partial => 'shared/main_nav'%>
+
 </div>
  
     <div id="nav" class="span-8 last append-bottom prepend-top">
@@ -64,6 +62,6 @@ end
    </div>
  
  <%= render :partial => 'shared/footer'%>
- 
+ </div>
 </body>
 </html>

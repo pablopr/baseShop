@@ -8,22 +8,23 @@
 #=====================================================================
 
 # Username to access the MySQL server e.g. dbuser
-USERNAME=dbuser
+USERNAME=vino_spree
 
 # Username to access the MySQL server e.g. password
-PASSWORD=password
+PASSWORD=estrech0s
+
 
 # Host name (or IP address) of MySQL server e.g localhost
 DBHOST=localhost
 
 # List of DBNAMES for Daily/Weekly Backup e.g. "DB1 DB2 DB3"
-DBNAMES="DB1 DB2 DB3"
+DBNAMES="vino_spreelive"
 
 # Backup directory location e.g /backups
-BACKUPDIR="/backups"
+BACKUPDIR="/home/vino/backups"
 
 # Directorios a copiar
-DIRECTORIES="/home/admin/www /etc"
+DIRECTORIES="/home/vino/baseShop"
 
 # Nombre de la máquina
 COMPUTER=localhost 
