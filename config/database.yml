@@ -16,5 +16,5 @@ production:
    encoding: utf8
    database: qpomo_spreelive
    username: qpomo_spree
-   password: deD6FPop
+   password: xxxxx
    host: localhost
